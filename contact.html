@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Abhilash Kodihalli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #222;
+            color: #e5e5e5;
+            overflow-x: hidden;
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .logo i {
+            height: 45px;
+            width: 45px;
+            background-color: #007ced;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav .navlinks {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .navlinks li {
+            margin-right: 20px;
+        }
+
+        nav .navlinks li a {
+            color: #e5e5e5;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        nav .navlinks li a:hover {
+            color: #007ced;
+        }
+
+        .contact-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #007ced;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #333;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        .contact-info p {
+            margin: 15px 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: #007ced;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            color: #e5e5e5;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #007ced;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav .navlinks {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav .navlinks li {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-a"></i>
+                <div class="logo-text">Abhilash Kodihalli</div>
+            </div>
+            <nav>
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="Animated-Dark-Portfolio-main\AbhilashKodihalli_CV.pdf" download="Animated-Dark-Portfolio-main\AbhilashKodihalli_CV.pdf">Resume</a></li>
+                    <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision!</p><br></br>
+            <div class="contact-info">
+                <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:abhilash@example.com" style="color: #007ced;">yk27abhi@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i> Phone: +91-9845884720</p>
+                <p><i class="fa-solid fa-map-marker-alt"></i> Location: Benaluru,India </p>
+                <p><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/abhilash-kodihalli-62b363224" target="_blank" style="color: #007ced;">linkedin.com/in/yourprofile</a></p>
+                <p><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/yourusername" target="_blank" style="color: #007ced;">github.com/yourusername</a></p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/abhilash-kodihalli-62b363224" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:yk27abhi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+919845884720"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Abhilash Kodihalli. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

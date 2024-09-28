@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MyPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Abhilash Kodihalli</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="E:\portfolio\Animated-Dark-Portfolio-main\Animated-Dark-Portfolio-main\images\Abhilash Kodihalli CV.pdf" download="E:\portfolio\Animated-Dark-Portfolio-main\Animated-Dark-Portfolio-main\images\Abhilash Kodihalli CV.pdf">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
+
+                    </ul>
+                </nav>
+            </header>
+
+
+
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="E:\portfolio\Animated-Dark-Portfolio-main\Animated-Dark-Portfolio-main\mainn_photo.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">QA Automation Test Engineer</span></h5>
+                    <h1>Abhilash Kodihalli</h1>
+                    <p> Experienced <b>Test Automation Engineer</b> with expertise in Selenium for automation testing and a solid foundation in manual testing. Skilled in creating efficient test plans, scenarios, and test cases for functional, regression, smoke, and UAT testing. Proficient in defect tracking and management through Jira, with deep knowledge of Agile, SDLC, and STLC practices. Strong command of TestNG, Maven, and POM frameworks, driving automation efficiency and improving overall test coverage. Committed to continuous improvement and delivering high-quality, reliable software solutions.
+                    </p>
+
+                    <div class="btn-group">
+                        <!-- Updated download link -->
+                        <a href="E:\portfolio\Animated-Dark-Portfolio-main\Animated-Dark-Portfolio-main\AbhilashKodihalli_CV.pdf" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                     </div>
+                     
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a> -->
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["QA Automatiom Test Engineer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+
+
+</html>
